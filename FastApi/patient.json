@@ -1,0 +1,96 @@
+{
+  "patients": [
+    {
+      "personal_info": {
+        "patient_id": "P001",
+        "name": "Ali Khan",
+        "age": 42,
+        "gender": "Male",
+        "marital_status": "Married"
+      },
+      "physical_metrics": {
+        "height_cm": 168,
+        "weight_kg": 92,
+        "bmi": 32.6,
+        "category": "Obese"
+      },
+      "lifestyle": {
+        "physical_activity": "Low",
+        "daily_steps_avg": 2500,
+        "sleep_hours": 5,
+        "screen_time_hours": 8
+      },
+      "dietary_habits": {
+        "meals_per_day": 4,
+        "junk_food_frequency": "High",
+        "sugar_intake": "High",
+        "water_intake_liters": 1.5
+      },
+      "medical_history": {
+        "diabetes": true,
+        "hypertension": true,
+        "cholesterol": "High",
+        "family_history_obesity": true
+      },
+      "mental_health": {
+        "stress_level": "High",
+        "emotional_eating": true
+      },
+      "goals": {
+        "target_weight_kg": 75,
+        "motivation_level": "Medium"
+      },
+      "doctor_notes": {
+        "recommended_diet": "Low-carb, high-protein",
+        "exercise_plan": "Walking 30 mins daily",
+        "follow_up_weeks": 4
+      }
+    },
+    {
+      "personal_info": {
+        "patient_id": "P002",
+        "name": "Sara Ahmed",
+        "age": 29,
+        "gender": "Female",
+        "marital_status": "Single"
+      },
+      "physical_metrics": {
+        "height_cm": 162,
+        "weight_kg": 68,
+        "bmi": 25.9,
+        "category": "Overweight"
+      },
+      "lifestyle": {
+        "physical_activity": "Moderate",
+        "daily_steps_avg": 6000,
+        "sleep_hours": 6,
+        "screen_time_hours": 6
+      },
+      "dietary_habits": {
+        "meals_per_day": 3,
+        "junk_food_frequency": "Moderate",
+        "sugar_intake": "Moderate",
+        "water_intake_liters": 2
+      },
+      "medical_history": {
+        "diabetes": false,
+        "hypertension": false,
+        "cholesterol": "Normal",
+        "family_history_obesity": false
+      },
+      "mental_health": {
+        "stress_level": "Moderate",
+        "emotional_eating": false
+      },
+      "goals": {
+        "target_weight_kg": 58,
+        "motivation_level": "High"
+      },
+      "doctor_notes": {
+        "recommended_diet": "Balanced diet",
+        "exercise_plan": "Gym + cardio 4x/week",
+        "follow_up_weeks": 6
+      }
+    }
+  ]
+}
