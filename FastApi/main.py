@@ -1,7 +1,10 @@
 from fastapi import FastAPI , Path , HTTPException ,Query
-
+from pydantic import BaseModel
 import json
 app = FastAPI()
+
+  
+
 @app.get('/patient')
 def load_data():
   with open("patient.json", "r") as file:
@@ -53,3 +56,25 @@ def sort_patients(sort_by: str = Query(..., description='Sort on the basis of he
     sorted_data = sorted(data.values(), key=lambda x: x.get(sort_by, 0), reverse=sort_order)
 
     return sorted_data
+
+
+
+
+from pydantic import BaseModel
+
+class Patient(BaseModel):
+    name: str
+    age: int
+
+def insert_patient_data(patient: Patient):
+    print("Name:", patient.name)
+    print("Age:", patient.age)
+
+# Input data
+patient_info = {'name': 'farhan', 'age': 'ff'}
+
+# Create object
+patient1 = Patient(**patient_info)
+
+# Call function
+insert_patient_data(patient1)
